@@ -1,6 +1,3 @@
-//
-// Created by adm on 2025/3/10.
-//
 #include <iostream>
 #include <fstream>
 #include <sstream>
