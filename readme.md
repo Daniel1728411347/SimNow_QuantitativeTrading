@@ -1,5 +1,5 @@
 # Quant System 目录结构
-
+<pre>
 quant_system/
 ├── CMakeLists.txt                  # 主构建文件
 ├── include/                        # 公共头文件
@@ -48,8 +48,9 @@ quant_system/
 │   └── risk_rules.json            # 风控规则
 │
 └── tests/                         # 测试代码
-    ├── unit_tests/                # 单元测试
-    │   ├── test_market_engine.cpp
-    │   └── test_order_manager.cpp
-    └── perf_tests/                # 性能测试
-        └── latency_benchmark.cpp
+├── unit_tests/                # 单元测试
+│   ├── test_market_engine.cpp
+│   └── test_order_manager.cpp
+└── perf_tests/                # 性能测试
+└── latency_benchmark.cpp
+</pre>
