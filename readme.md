@@ -1,17 +1,16 @@
+# Quant System 目录结构
+
 quant_system/
 ├── CMakeLists.txt                  # 主构建文件
 ├── include/                        # 公共头文件
 │   ├── common/
 │   │   ├── macros.hpp             # 通用宏定义（如跨平台修饰符）
 │   │   └── types.hpp              # 统一数据类型（Decimal、Timestamp等）
-│   └── utils/
-│   │ ├── lockfree_queue.hpp      # 无锁队列实现
-│   │ └── memory_pool.hpp         # 自定义内存池
-
-│   │
-
-    └── core/
-
+│   ├── utils/
+│   │   ├── lockfree_queue.hpp      # 无锁队列实现
+│   │   └── memory_pool.hpp         # 自定义内存池
+│   └── core/
+│
 ├── src/
 │   ├── core/                      # 核心交易系统模块
 │   │   ├── ctp_gateway/           # CTP接入层
@@ -38,13 +37,16 @@ quant_system/
 │   │   └── cache/                 # 缓存层
 │   │       └── redis_cache.cpp    # Redis客户端封装
 │   └── main.cpp                   # 系统入口
+│
 ├── third_party/                   # 第三方依赖
 │   ├── ctp_api/                   # CTP接口头文件及库
 │   ├── zeromq/                    # ZeroMQ库
 │   └── protobuf/                  # Protobuf库
+│
 ├── config/                        # 配置文件
 │   ├── strategy_config.yaml       # 策略参数
 │   └── risk_rules.json            # 风控规则
+│
 └── tests/                         # 测试代码
     ├── unit_tests/                # 单元测试
     │   ├── test_market_engine.cpp
