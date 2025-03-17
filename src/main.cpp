@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+#include <Windows.h>
 #include <string>
 #include <unordered_map>
 #include "ctp_md_adapter.h"
@@ -20,7 +21,7 @@ TThostFtdcPasswordType gInvesterPassword = "";                     // 投资者�
 // 行情参数
 CThostFtdcMdApi *g_pMdUserApi = nullptr;                           // 行情指针
 char gMdFrontAddr[] = "tcp://180.168.146.187:10010";               // 模拟行情前置地址
-const char *g_pInstrumentID[] = {"TF1706", "zn1705", "cs1801", "CF705"}; // 行情合约代码列表，中、上、大、郑交易所各选一种
+char *g_pInstrumentID[] = {"TF1706", "zn1705", "cs1801", "CF705"}; // 行情合约代码列表，中、上、大、郑交易所各选一种
 int instrumentNum = 4;                                             // 行情合约订阅数量
 unordered_map<string, TickToKlineHelper> g_KlineHash;              // 不同合约的k线存储表
 
@@ -36,9 +37,9 @@ int main()
 	// 账号密码
 	cout <<"123" <<endl;
 	cout << "请输入账号： ";
-	scanf("%s", gInvesterID);
+	cin >> gInvesterID;
 	cout << "请输入密码： ";
-	scanf("%s", gInvesterPassword);
+	cin >> gInvesterPassword;
 
 	// 初始化行情线程
 	cout << "初始化行情..." << endl;

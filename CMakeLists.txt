@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+﻿cmake_minimum_required(VERSION 3.10)
 project(SimNow_QuantitativeTrading)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -12,6 +12,7 @@ message(STATUS "项目源目录: ${CMAKE_SOURCE_DIR}")
 set(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include")
 set(SRC_DIR "${CMAKE_SOURCE_DIR}/src")
 set(THIRD_PARTY_DIR "${CMAKE_SOURCE_DIR}/third_party")
+#set(CTP_API_DIR "${THIRD_PARTY_DIR}/ctp_api")
 set(CTP_API_DIR "${THIRD_PARTY_DIR}/CTP_APIPast")
 
 # 添加在链接之前的验证步骤

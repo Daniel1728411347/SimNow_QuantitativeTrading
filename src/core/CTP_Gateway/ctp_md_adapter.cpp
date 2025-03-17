@@ -11,7 +11,7 @@ extern char gMdFrontAddr[];                      // 模拟行情前置地址
 extern TThostFtdcBrokerIDType gBrokerID;         // 模拟经纪商代码
 extern TThostFtdcInvestorIDType gInvesterID;     // 投资者账户名
 extern TThostFtdcPasswordType gInvesterPassword; // 投资者密码
-extern const char *g_pInstrumentID[];                  // 行情合约代码列表，中、上、大、郑交易所各选一种
+extern char *g_pInstrumentID[];                  // 行情合约代码列表，中、上、大、郑交易所各选一种
 extern int instrumentNum;                        // 行情合约订阅数量
 extern std::unordered_map<std::string, TickToKlineHelper> g_KlineHash; // k线存储表
 
